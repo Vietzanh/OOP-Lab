@@ -1,0 +1,43 @@
+- What happens if users choose “Cancel”?
+The program return "You have chosen: No" because with "JOptionPane.YES_OPTION? "Yes":"No", if option is not "yes", it will be "no".
+- How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do”
+and “I don’t”
+The customization is in ChoosingOption_6_1
+
+
+
+- What are the advantages of Polymorphism?
+1. Flexibility and extensibility: Polymorphism allows you to write code that can work with objects of various types.
+2. Reusability: By designing classes to be polymorphic, you can reuse code across different types of objects, reducing duplication.
+3. Simplification: Polymorphism simplifies the complexity of large systems by abstracting away implementation details
+and allowing you to work with objects at a higher level of abstraction.
+
+- How is Inheritance useful to achieve Polymorphism in Java?
+Inheritance is a mechanism used to achieve polymorphism. By creating a subclass that inherits from a superclass, you can 
+leverage polymorphism through method overriding. When a subclass overrides a method of its superclass, you can treat objects 
+of the subclass as objects of the superclass. This allows for dynamic method dispatch, where the appropriate method implementation 
+is determined at runtime based on the actual type of the object.
+
+- What are the differences between Polymorphism and Inheritance in Java?
+1. Polymorphism:
++ A single interface can represent multiple underlying forms. In Java, it's typically achieved through method overriding and dynamic method dispatch.
++ Polymorphism is achieved through method overriding, where a subclass provides a specific implementation of a method defined in its superclass.
++ Polymorphism allows for flexible and dynamic behavior at runtime, enabling different implementations of methods to be called based on the actual type of the object.
+2. Inheritance:
++ Inheritance is where a subclass is derived from a superclass, inheriting its properties and behaviors.
++ Inheritance involves creating a hierarchy of classes, where subclasses inherit attributes and behaviors from their superclass.
+
+
+
+- What class should implement the Comparable interface?
+The Media class.
+- In those classes, how should you implement the compareTo()method to reflect the ordering that
+we want?
+/////
+- Can we have two ordering rules of the item (by title then cost and by cost then title) if we use this
+Comparable interface approach?
+No, we cannot have 2 ordering rules of the item because we can override the method compareTo() only once in Media Class
+- Suppose the DVDs have a different ordering rule from the other media types, that is by title, then
+decreasing length, then cost. How would you modify your code to allow this?
+When building the comparing class, I will use "comparing().thenComparingreturn().thenComparing.compare()". Then the return of the "compare" method is:
+return Comparator.comapring(//title).thenComparing(//length).thenComparing(//cost).compare(dvd1, dvd2)

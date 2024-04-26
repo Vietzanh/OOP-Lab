@@ -1,5 +1,0 @@
-- What happens if users choose “Cancel”?
-The program return "You have chosen: No" because with "JOptionPane.YES_OPTION? "Yes":"No", if option is not "yes", it will be "no".
-- How to customize the options to users, e.g. only two options: “Yes” and “No”, OR “I do”
-and “I don’t”
-The customization is in ChoosingOption_6_1
