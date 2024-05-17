@@ -1,0 +1,15 @@
+Top-Level Containers:
+AWT: Uses Frame class for the main application window.
+Swing: Uses JFrame class for the main window. It inherits from Frame but provides a more platform-independent look and feel.
+
+Component Classes:
+AWT: Component classes often have simpler names, like Button, TextField, Label, etc.
+Swing: Swing component classes typically start with a "J" prefix, like JButton, JTextField, JLabel, etc. They offer more features and customization options compared to their AWT counterparts.
+
+Event Handling:
+AWT: Relies on a single listener interface (EventListener) for most events. You need to implement this interface and define methods for each event type (e.g., button click, window close).
+Swing: Uses a more sophisticated event model with specific listener interfaces for different event types (e.g., ActionListener for button clicks, WindowListener for window events). This makes code cleaner and easier to maintain.
+
+Appearance:
+AWT: The look and feel of AWT components is heavily influenced by the underlying operating system. This can lead to inconsistencies across different platforms.
+Swing: Swing components, also known as "pluggable look and feel" components, provide a more consistent look and feel across different platforms. You can even change the entire look and feel of your application at runtime using themes.
